@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OFF-WHITE</title>
+    <link rel="stylesheet" href="css/aboutus.css"/>
+</head>
+<body>
+    <nav>
+        <div class='container'>
+          <ul>
+            <li>
+              <a href='index.html'>HOME</a>
+            </li>
+            <li>
+              <a href='#'>18 F/W</a>
+            </li>
+            <li>
+              <a href='#'>COLLECTIONS</a>
+            </li>
+            <li>
+              <a href='about.html'>ABOUT</a>
+            </li>
+            <li>
+              <a href='#'>CONTACT</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+      <header>
+        <div class='container'>         
+          <h1>
+                OFF-WHITE™
+          </h1>
+        </div>
+      </header>
+
+      <div id='nav-bg'></div>
+      
+      <section id='about'>
+        <div class='container'>
+          
+          <p>
+                OFF-WHITE c/o VIRGIL ABLOH™ is a fashion label rooted in current culture at a taste-level particular to now. With a specific opinion and not necessarily same with vision seasonal men's and women's collections are offered.
+
+                There is a product offering of the brand also in the realm of furniture and ready made goods to further reinforce an approach to lifestyle.
+                
+                All products are based in a concept that adapts from season to season. Manufacturing is based in Milan with a core value of the brand to be made from the best available and particular opinion regarding fabric, fit and fabrication.
+                
+                The result is to be a young brand embracing the now in a sophisticated manner.
+                
+                film directed by Piotr Niepsuj                
+          </p>
+        </div>
+      </section>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
+
+    var header = $('header');
+    var range = 200;
+
+    $(window).on('scroll', function () {
+  
+    var scrollTop = $(this).scrollTop(),
+      height = header.outerHeight(),
+      offset = height / 2,
+      calc = 1 - (scrollTop - offset + range) / range;
+
+    header.css({ 'opacity': calc });
+
+    if (calc > '1') {
+        header.css({ 'opacity': 1 });
+    } else if ( calc < '0' ) {
+        header.css({ 'opacity': 0 });
+    }
+  
+    });
+
+    </script>
+
+</html>
