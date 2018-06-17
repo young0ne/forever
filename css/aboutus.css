@@ -29,7 +29,7 @@
     margin: 0 auto;
     top: 0;
     z-index: 3;
-    margin-left: 15%;
+    margin-left: 15.8%;
   }
 
   nav ul {
@@ -69,7 +69,7 @@
   }
   
   #nav-bg {
-    background: black;
+    background: #000;
     position: fixed;
     height: 5em;
     width: 100%;
@@ -79,8 +79,8 @@
   
   header {
     position: relative;
-    background-color: #333;
-    padding: 11%;
+    background-color: #222;
+    padding: 7%;
     z-index: 2;
   }
 
@@ -90,7 +90,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   #about {
     background: #E7E3DA;
     height: 70em;
