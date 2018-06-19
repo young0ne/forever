@@ -79,21 +79,23 @@
   
   header {
     position: relative;
-    background-color: #222;
+    background-image: url(../img/about_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 7%;
     z-index: 2;
   }
 
   header h1 {
     color: white;
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;
     text-align: center;
   }
 
   #about {
     background: #E7E3DA;
-    height: 70em;
+    height: 60em;
     padding: 5em 0;
   }
 

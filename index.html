@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>OFF-WHITE</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/load.css"/>
 </head>
 <body>
     <nav>
@@ -28,16 +29,59 @@
       </div>
   </nav>
 
-  <div class="container-video">
-      <div class="table-center">
-        <div>
-          <h1>OFF-WHITE</h1>
-        </div>
+  <section class="content">
+    <div class="loading">
+      <div class="loading-text">
+          <span class="loading-text-words">O</span>
+          <span class="loading-text-words">F</span>
+          <span class="loading-text-words">F</span>
+          <span class="loading-text-words">W</span>
+          <span class="loading-text-words">H</span>
+          <span class="loading-text-words">I</span>
+          <span class="loading-text-words">T</span>
+          <span class="loading-text-words">E</span>
       </div>
-      <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-        <source src="img/OFF-WHITE.mp4" type="video/mp4">
   </div>
+  </section>
+    
+  <section class="parallax-container">
+
+    <div class="parallax"></div>
+    
+    <div class="container-video">
+        <div class="table-center">
+        </div>
+        <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+          <source src="assets/OFF-WHITE.mp4" type="video/mp4">
+    </div>
+  
+  </section>
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+
+  var parallaxElements = $('.parallax'),
+    parallaxQuantity = parallaxElements.length;
+
+  $(window).on('scroll', function () {
+
+    window.requestAnimationFrame(function () {
+
+      for (var i = 0; i < parallaxQuantity; i++) {
+        var currentElement =  parallaxElements.eq(i);
+        var scrolled = $(window).scrollTop();
+            
+          currentElement.css({
+            'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
+          });
+
+      }
+    });
+
+  });
+
+</script>
 
 </html>
