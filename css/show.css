@@ -92,7 +92,7 @@
 
   #about {
     background: #e4e8e9;
-    height: 136em;
+    height: 140em;
   }
 
   #pattern img {
@@ -360,4 +360,10 @@
   float: right;
   margin-top: 3%;
   margin-right: 23%;
+}
+
+#top img{
+  display: flex;
+  margin-top: 50%;
+  margin-left: 48.5%;
 }
