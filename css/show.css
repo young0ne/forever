@@ -12,7 +12,7 @@
   
   body {
     overflow-x: hidden;
-    background: #000;
+    background: #e4e8e9;
     margin: 0;
     font-family: 'Cormorant Unicase', sans-serif;
     font-size: 16px;
@@ -92,7 +92,7 @@
 
   #about {
     background: #e4e8e9;
-    height: 140em;
+    height: 2100px;
   }
 
   #pattern img {
@@ -360,10 +360,4 @@
   float: right;
   margin-top: 3%;
   margin-right: 23%;
-}
-
-#top img{
-  display: flex;
-  margin-top: 50%;
-  margin-left: 48.5%;
 }
