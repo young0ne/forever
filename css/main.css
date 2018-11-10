@@ -1,0 +1,146 @@
+body {
+    background-color: #004cf8;
+}
+
+.main-wrap {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ---- Header ---- */
+
+.title {
+    color: #fff;
+}
+
+.title a:visited {
+    color: #fff;
+}
+
+.one,
+.two,
+.three {
+    background: #fff;
+}
+
+
+/* ---- Contents ---- */
+
+article {
+    position: fixed;
+    top: 15%;
+    bottom: 5%;
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    height: 75%;
+    background-color: #fff;
+}
+
+
+/* ---- Main Text ---- */
+
+.title-txt {
+    position: absolute;
+    top: 37%;
+    left: 30%;
+}
+
+.title-txt p {
+    padding-bottom: 2%;
+    font-size: 3.3vw;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    color: #000;
+}
+
+
+/* ---- icon ---- */
+
+.icon {
+    position: absolute;
+    left: 9%;
+    bottom: 20%;
+    width: 3%;
+    height: 16%;
+}
+
+.icon #icon-top {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 30%;
+}
+
+.icon #icon-top img {
+    height: 100%;
+}
+
+.icon #icon-btm {
+    width: 100%;
+    height: 40%;
+}
+
+.icon #icon-btm img {
+    height: 100%;
+}
+
+
+/* ---- About Connect ---- */
+
+.connect {
+    position: absolute;
+    display: flex;
+    top: 12%;
+    right: 10%;
+    width: 14%;
+    height: 4.5%;
+    font-size: 1.3vw;
+    color: #004cf8;
+}
+
+.connect #connect-line {
+    align-self: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 20%;
+    height: 2px;
+    background-color: #004cf8
+}
+
+.connect span {
+    text-decoration: underline;
+}
+
+.connect a:visited {
+    color: #004cf8;
+}
+
+
+/* ---- Draw Line ---- */
+
+.main-line {
+    width: 100%;
+    height: 100%;
+}
+
+.line-top {
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+    width: 2px;
+    height: 0;
+    background-color: #000;
+}
+
+.line-btm {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+}

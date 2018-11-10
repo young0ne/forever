@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #004cf8;
+}
+
+.main-wrap {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ---- Draw Line ---- */
+
+.main-line {
+    width: 100%;
+    height: 100%;
+}
+
+.line {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transform: translateX(-50%) translateY(-50%)}
+
+.in-line {
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 0;
+    background-color: #fff;
+    transform: translateY(-50%)
+}
+
+.in-line._l {
+    left: 0
+}
+
+.in-line._r {
+    right: 0
+}
+
+.title {
+    display: none;
+    position: absolute;
+    top: 40px;
+    font-size: 13px;
+    color: #fff;
+    opacity: 0
+}
+
+.title._l {
+    left: 0
+}
+
+.title._r {
+    right: 0
+}
+
+
+/* ---- Text Translation ---- */
+
+.main-txt {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 4vw;
+    opacity: 0;
+}
+
+.main-txt a {
+    position: absolute;
+    left: 25%;
+    right: 20%;
+}
+        
+.main-txt #word {
+    margin: 0 auto;
+    font-weight: 800;
+    color: white;
+}
+        
+.letter {
+    display: inline-block;
+}

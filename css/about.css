@@ -1,0 +1,181 @@
+body {
+    background-color: #fff;
+}
+
+
+/* ---- Header ---- */
+
+.one,
+.two,
+.three {
+    background: #000;
+}
+
+.title {
+    color: #000;
+}
+
+.title a:visited {
+    color: #000;
+}
+
+
+/* ---- Contents ---- */
+
+article {
+    position: fixed;
+    top: 15%;
+    bottom: 5%;
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    height: 75%;
+    background-color: #fff;
+}
+
+
+/* ---- My pic ---- */
+
+.my-pic {
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background-image: url('../img/young.jpg');
+    background-size: cover;
+}
+
+
+/* ---- txt Section ---- */
+
+.txt-section {
+    position: absolute;
+    right: 8%;
+    width: 30%;
+    height: 100%;
+    color: #000;
+}
+
+
+/* ---- txt-Top Section ---- */
+
+.main-txt {
+    position: absolute;
+    top: 11%;
+    width: 80%;
+    height: 22%;
+    line-height: 1.4;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+/* --- txt reveal --- */
+
+.main-txt,
+.main-txt:after{
+  width:70%;
+}
+
+.main-txt h1,
+.main-txt h1:after {
+	animation-iteration-count: 1;
+	animation-duration: 800ms;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.main-txt h1 {
+	position: relative;
+	z-index: 2;
+	display: block;
+	animation-name: reveal-text;
+	color: #333;
+}
+	
+.main-txt h1:after {
+	content: "";
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #004cf8;
+	animation-name: revealer-text;
+}
+
+@keyframes reveal-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes revealer-text {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.sub-txt {
+    position: absolute;
+    left: 1.5%;
+    top: 37%;
+    width: 30%;
+    height: 10%;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+
+/* ---- txt-btn Section ---- */
+
+.introduce {
+    position: absolute;
+    left: 1.5%;
+    bottom: 15%;
+    width: 80%;
+    height: 30%;
+}
+
+.introduce p {
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.introduce #resume-btn {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 28%;
+    height: 21%;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #fff;
+    background-color: #004cf8;
+}
+
+.introduce a:visited {
+    color: #fff;
+}
+
+.introduce a:hover {
+    opacity: 0.7;
+    transition: all 0.3s
+}

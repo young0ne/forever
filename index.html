@@ -1,87 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>OFF-WHITE</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/load.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>integral studio</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/intro.css">
 </head>
 <body>
-    <nav>
-      <div class='container'>
-        <ul>
-          <li>
-            <a href='index.html'>HOME</a>
-          </li>
-          <li>
-            <a href='fw.html'>18 F/W</a>
-          </li>
-          <li>
-            <a href='collection.html'>COLLECTIONS</a>
-          </li>
-          <li>
-            <a href='about.html'>ABOUT</a>
-          </li>
-          <li>
-            <a href='contact.html'>CONTACT</a>
-          </li>
-        </ul>
-      </div>
-  </nav>
 
-  <section class="content">
-    <div class="loading">
-      <div class="loading-text">
-          <span class="loading-text-words">O</span>
-          <span class="loading-text-words">F</span>
-          <span class="loading-text-words">F</span>
-          <span class="loading-text-words">W</span>
-          <span class="loading-text-words">H</span>
-          <span class="loading-text-words">I</span>
-          <span class="loading-text-words">T</span>
-          <span class="loading-text-words">E</span>
-      </div>
-  </div>
-  </section>
-    
-  <section class="parallax-container">
 
-    <div class="parallax"></div>
-    
-    <div class="container-video">
-        <div class="table-center">
+
+    <div class="main-wrap">
+
+        <!-- Draw Line -->
+        <div class="main-line">
+            <div class="line">
+                <div class="in-line _l"></div>
+                <div class="in-line _r"></div>
+                <div class="title _l">Designer</div>
+                <div class="title _r">Publisher</div>
+            </div>
         </div>
-        <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-          <source src="assets/OFF-WHITE.mp4" type="video/mp4">
+
+        <!-- Text Translation -->
+        <div class="main-txt">
+            <a href="main.html">
+                <h1 id="word">
+                <span class="letter">I</span>
+                <span class="letter">N</span>
+                <span class="letter">T</span>
+                <span class="letter">E</span>
+                <span class="letter">G</span>
+                <span class="letter">R</span>
+                <span class="letter">A</span>
+                <span class="letter">L</span>
+                <span class="letter"> </span>
+                <span class="letter">S</span>
+                <span class="letter">T</span>
+                <span class="letter">U</span>
+                <span class="letter">D</span>
+                <span class="letter">I</span>
+                <span class="letter">O</span>
+                </h1>
+            </a>
+        </div>
+
     </div>
-  
-  </section>
+
 
 </body>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script type="text/javascript">
-
-  var parallaxElements = $('.parallax'),
-    parallaxQuantity = parallaxElements.length;
-
-  $(window).on('scroll', function () {
-
-    window.requestAnimationFrame(function () {
-
-      for (var i = 0; i < parallaxQuantity; i++) {
-        var currentElement =  parallaxElements.eq(i);
-        var scrolled = $(window).scrollTop();
-            
-          currentElement.css({
-            'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
-          });
-
-      }
-    });
-
-  });
-
-</script>
+<script src="./js/intro.js" type="text/javascript"></script>
 
 </html>
