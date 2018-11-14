@@ -33,6 +33,30 @@ article {
     background-color: #004cf8;
 }
 
+/* Dot nav */
+
+.dot-nav {
+    z-index: 100;
+    position: fixed;
+    top: 45%;
+    right: 10%;
+}
+
+.dot-nav li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 25px;
+    border-radius: 50%;
+    opacity: 0.5;
+    list-style: none;
+    background-color: #fff;
+}
+
+.dot-nav .selected {
+    opacity: 1;
+}
+
 
 /* ---- Works Title ---- */
 
@@ -81,6 +105,7 @@ article {
 }
 
 .section-wrap section .blue-line {
+    z-index: 100;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -90,6 +115,7 @@ article {
 }
 
 .section-wrap section .works-title {
+    z-index: 100;
     position: absolute;
     top: 23%;
     left: 10%;
@@ -98,6 +124,7 @@ article {
 }
 
 .section-wrap section .works-title p {
+    z-index: 100;
     font-size: 3vw;
     font-weight: 700;
     line-height: 1.2;
@@ -105,6 +132,7 @@ article {
 }
 
 .section-wrap section .view-btn {
+    z-index: 100;
     position: absolute;
     right: 10%;
     bottom: 10%;
@@ -116,21 +144,4 @@ article {
     text-align: center;
     line-height: 2;
     color: #004cf8;
-}
-
-
-/* ---- section 1 ---- */
-
-
-/* ---- section 2 ---- */
-.section-wrap .section2 {
-    top:100%;
-    opacity: 0;
-}
-
-
-/* ---- section 3 ---- */
-.section-wrap .section3 {
-    top: 200%;
-    opacity: 0;
 }
