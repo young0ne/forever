@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
     var $main = $('.my-pic');
+    var $resume = $('#resume-btn')
 
     TweenMax.set($main, {css:{x:-50, autoAlpha:0}});
 

@@ -43,6 +43,10 @@ article {
 }
 
 .dot-nav li {
+    list-style: none;
+}
+
+.dot-nav span {
     display: block;
     width: 10px;
     height: 10px;
@@ -96,12 +100,18 @@ article {
 }
 
 .section-wrap section {
+    visibility: hidden;
     position: absolute;
     top: 10%;
     bottom: 10%;
     width: 60%;
     height: 80%;
     background-color: #fff;
+}
+
+.section-wrap .on {
+    visibility: visible;
+    opacity: 1;
 }
 
 .section-wrap section .blue-line {
@@ -145,3 +155,10 @@ article {
     line-height: 2;
     color: #004cf8;
 }
+
+.section-wrap section .view-btn:hover {
+    background-color: #004cf8;
+    color: #fff;
+    transition: 0.3s;
+}
+
