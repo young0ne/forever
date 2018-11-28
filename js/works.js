@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(e){
 
     var $section, $blueLine, $title, $txt, $dotNav, $viewBtn;
 
@@ -9,6 +9,7 @@ $(document).ready(function(){
         $section = $('section');
         $dotNav = $('.dot-nav');
         $dotNavEl = $dotNav.find('span');
+        $viewBtn = $section.find('.view-btn');
     }
 
     // Reset
@@ -63,6 +64,17 @@ $(document).ready(function(){
         console.log($dotNavEl.eq(id));
     }
 
-    init();
+    // Click View Btn
+
+    TweenMax.set($('iframe'), {css:{x:3000, autoAlpha:0}});
+
+    /* a요소를 클릭 했을 시 */
+    $('section a').click(function(){
+        /* iframe 요소의 src 속성값을 a 요소의 data-url 속성값으로 변경 */ 
+        $('#iframe').attr('src',$(this).attr('data-url'));
+        TweenMax.to($('iframe'), 0.8, {css:{x:0, autoAlpha:1}, ease: Power3.easeOut})
+    })   
+
+    init();     
 
 });
