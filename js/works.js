@@ -66,15 +66,17 @@ $(document).ready(function(e){
 
     // Click View Btn
 
-    TweenMax.set($('iframe'), {css:{x:3000, autoAlpha:0}});
+    TweenMax.set($('.frame-wrap'), {css:{x:3000, autoAlpha:0}});
 
-    /* a요소를 클릭 했을 시 */
     $('section a').click(function(){
-        /* iframe 요소의 src 속성값을 a 요소의 data-url 속성값으로 변경 */ 
         $('#iframe').attr('src',$(this).attr('data-url'));
-        TweenMax.to($('iframe'), 0.8, {css:{x:0, autoAlpha:1}, ease: Power3.easeOut})
-    })   
+        TweenMax.to($('.frame-wrap'), 0.8, {css:{x:0, autoAlpha:1}, ease: Power3.easeOut})
+    });
 
+    $('.frame-wrap a').click(function(){
+        TweenMax.to($('.frame-wrap'), 0.8, {css:{x:3000}, ease: Power3.easeInOut})
+    });
+  
     init();     
 
 });
