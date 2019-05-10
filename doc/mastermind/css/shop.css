@@ -1,0 +1,29 @@
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+/* ship list */
+
+.list-wrap .container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.list-wrap .container h1{
+    position: relative;
+    left: 10%;
+    margin-top: 3%;
+    width: 100%;
+    font-size: 35px;
+    color:#fff;
+}
+  
+.list-wrap .container #map-canvas { 
+    position: relative;
+    left: 10%;
+    margin-top: 2%;
+    color: #000;
+}

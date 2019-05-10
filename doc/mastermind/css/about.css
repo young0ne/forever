@@ -1,0 +1,177 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+/* ---- onepage scroll ---- */
+
+.scroll-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.scroll-container section {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* ---- section 1 ----*/
+
+.section1 {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.section1-bg {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    height: 60%;
+    background-image: url('../img/about_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+/* ---- slide txt ---- */
+
+.slide-txt {
+    position: absolute;
+    top: 28%;
+    width: 100%;
+    height: 50%;
+}
+
+.slide-txt div {
+    text-align: center;
+    font-size: 85px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.3;
+}
+
+.slide-txt .txt-middle {
+    font-weight: 600;
+    color: #000;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+/* ---- section 2 ---- */
+
+.section2 {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+
+/* ---- left box ---- */
+
+.left-box {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/about_second.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.left-box .left-txt {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 60%;
+    height: 50%;
+}
+
+.left-box .left-txt p {
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+.left-box .left-txt p#underline {
+    text-decoration: underline;
+}
+
+
+/* ---- right box ---- */
+
+.right-box {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+
+.right-box .masaaki {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 20%;
+    height: 5%;
+    font-size: 1vw;
+    text-decoration: underline;
+}
+
+.right-box .slide-circle {
+    position: absolute;
+    bottom: 33%;
+    width: 100%;
+    height: 35%;
+    background-image: url('../img/about_circle.png');
+    background-size: cover;
+    -webkit-animation: slide 50s linear infinite;
+            animation: slide 50s linear infinite;
+}
+  
+  @-webkit-keyframes slide {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -2956px;
+    }
+  }
+  
+  @keyframes slide {
+    from {
+      background-position-x: 0;
+    }
+    to {
+      background-position-x: -2956px;
+    }
+  }  
+
+
+.right-box .right-txt {
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    width: 70%;
+    height: 15%;
+}
+
+.right-txt p {
+    text-align: right;
+    font-size: 1vw;
+    line-height: 1.5;
+    white-space: nowrap;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MASTERMIND</title>
+
+    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="css/shop.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+
+    <!-- menu -->
+    <div class="menu-section">
+
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav>
+            <ul role="nav" class="hidden">
+                <li><a href="main.html">MAIN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="collection.html">COLLECTION</a></li>
+                <li><a href="shop.html">SHOP LIST</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- shop list -->
+
+    <div class="list-wrap">
+
+        <div class="container">
+            <h1>- SHOP LIST</h1>
+            <div id="map-canvas" style="width: 80%; height: 500px;"></div>
+        </div>	
+
+    </div>
+
+
+</body>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVl3KYDlbvUlLcUbtboa6-jiopGTTLE48&callback=initMap" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/map.js"></script>
+
+</html>

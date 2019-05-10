@@ -107,8 +107,9 @@ a {
 
 nav ul {
     position: absolute;
-    top: 25%;
-    bottom: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+
     margin: 0;
     padding: 0;
     margin-left: 25%;
