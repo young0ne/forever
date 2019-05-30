@@ -26,41 +26,6 @@ body, html {
 /* ---- section 1 ---- */
 
 .section1 {
-    width: 100%;
-    height: 100%;
-}
-
-.container-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    -webkit-animation: load 1.5s 0.8s ease-out forwards;
-            animation: load 1.5s 0.8s ease-out forwards;
-}
-
-.container-video #video{
-    position: absolute;
-    width: 100%;
-    background-size: conver;
-}
-  
-@-webkit-keyframes load {
-    100% {
-      opacity: 1;
-    }
-}
-  
-  @keyframes load {
-    100% {
-      opacity: 1;
-    }
-}
-
-
-/* ---- section 2 ---- */
-
-.section2 {
     position: relative;
     width: 100%;
     height: 100%;
@@ -70,7 +35,7 @@ body, html {
 
 /* ---- left item ---- */
 
-.section2 .left-item {
+.section1 .left-item {
     position: absolute;
     top: 0;
     left: 0;
@@ -108,7 +73,7 @@ body, html {
 
 /* ---- right item ---- */
 
-.section2 .right-item {
+.section1 .right-item {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -304,7 +269,7 @@ body, html {
   }
 
 
-/* ---- section 3 ---- */
+/* ---- section 2 ---- */
 
 
 .banner{overflow:hidden;position:relative;width:100%;height:100%}
